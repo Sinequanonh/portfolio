@@ -4,7 +4,7 @@
   "description": "Boiler Plate",
   "main": "main.js",
   "scripts": {
-    "babel": "babel -w app/ -d build -s | esw -w app/ | node-sass -w stylesheets/scss/ -o stylesheets/css/",
+    "babel": "babel -w app/ -d build -s",
     "eslint": "esw -w app/",
     "sass": "node-sass -w stylesheets/scss/ -o stylesheets/css/",
     "start": "http-server -p 3005"

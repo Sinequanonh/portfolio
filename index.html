@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +7,19 @@
     <title>[:🚀:]</title>
 
     <!-- CSS -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <h1>Hello, world!</h1>
 
-    <!-- APP -->
-    <script src="app/app.js"></script>
-    <script src="app/routes.js"></script>
-
     <!-- DEPENDENCIES -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <!-- APP -->
+    <script src="build/app.js"></script>
+    <script src="build/routes.js"></script>
   </body>
 </html>

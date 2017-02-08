@@ -1,6 +1,4 @@
-import app from './app.js'
-
-app.config(($urlRouterProvider, $stateProvider) => {
+app.config(function config($urlRouterProvider, $stateProvider) {
   // Home
   $stateProvider.state('home', {
     url: '/',
