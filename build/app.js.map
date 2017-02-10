@@ -1,1 +1,1 @@
-{"version":3,"sources":["../app/app.js"],"names":["app","angular","module"],"mappings":";;AAAA,IAAMA,MAAMC,QAAQC,MAAR,CAAe,KAAf,EAAsB,CAAC,WAAD,CAAtB,CAAZ","file":"app.js","sourcesContent":["const app = angular.module('app', ['ui.router'])\n"]}
+{"version":3,"sources":["../app/app.js"],"names":["app","angular","module"],"mappings":";;AAAA,IAAMA,MAAMC,QAAQC,MAAR,CAAe,KAAf,EAAsB,CAAC,WAAD,CAAtB,CAAZ","file":"app.js","sourcesContent":["const app = angular.module('app', ['ui.router'])\n\n"]}
