@@ -1,9 +1,210 @@
-body {
-  color: #4568DC;
-  background-color: white;
+// THEME COLORS
+$gradient1: #f857a6;
+$gradient2: #ff5858;
+$project-height: 400px;
+
+$black: #333333;
+$white: #f2f6f9;
+$gray: #666;
+$red: #ff5a5f;
+
+// PROJECT COLORS
+$project-1: #00D6B6;
+$project-2: #ff6eb6;
+$project-3: #3BA0F3;
+
+// $project-1: #c1eeff;
+// $project-2: #ffecba;
+// $project-3: #7972f6;
+
+// FONT SIZES
+$size-sm   : 12px;
+$size-md   : 14px;
+$size-lg   : 16px;
+$size-title: 48px;
+
+html, body {
+  color: $black;
+  background-color: $white;
   font-family: Lato;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-h1 {
-  
+body {
+  overflow: hidden;
 }
+
+.divider {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+  
+// WRAPPERS
+.wrapper--infos {
+  top: 0;
+  left: 0;
+  padding: 14px;
+  width: 50%;
+  height: 100vh;
+  background-color: $white;
+  float: left;
+}
+
+.wrapper--projects {
+  width: 50%;
+  height: 100vh;
+  float: left;
+  overflow-y: auto;
+
+  .wrapper--project {
+    width: 100%;
+    
+    color: white;
+    padding: 8px;
+    &.project-1 {
+      background-color: $project-1;
+      height: $project-height;
+    }
+    &.project-2 {
+      background-color: $project-2;
+      height: $project-height;
+    }
+    &.project-3 {
+      background-color: $project-3;
+      height: $project-height;
+    }
+    &.footer {
+      height: 60px;
+      line-height: 60px;
+      background-color: $black;
+    }
+
+    img {
+      margin-top: 20px;
+      cursor: pointer;
+      max-width: 90%;
+      max-height: 320px;
+      height: inherit !important;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      border-radius: 2px;
+      transition: all 250ms cubic-bezier(.02,.01,.47,1);
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 20px rgba(0,0,0,.15);
+      }
+    }
+  }
+}
+
+.wrapper--footer {
+  width: 50%;
+  height: 60px;
+  line-height: 60px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.self--portrait {
+  img {
+    width: 200px;
+  }
+}
+
+.github--chart {
+  width: 100%;
+}
+
+a:hover, a:active, a:focus, a:visited {
+  text-decoration: none;
+}
+
+.fa {
+  color: $gray;
+  transition: all 0.2s ease 0s, opacity 500ms, transform 500ms;
+  &.fa-linkedin {
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  &.fa-dribbble {
+    &:hover {
+      color: #ea4c89;
+    }
+  }
+
+  &.fa-github {
+    &:hover {
+      color: black;
+    }
+  }
+
+  &.fa-medium {
+    &:hover {
+      color: #00AB6C;
+    }
+  }
+
+  &.fa-heart {
+    color: $red;
+  }
+}
+
+.animated {
+  animation-duration: 0.8s;
+}
+
+.animation-1 {
+  animation-delay: 0s;
+}
+
+.animation-2 {
+  animation-delay: 0.25s;
+}
+
+.animation-3 {
+  animation-delay: 0.5s;
+}
+
+// BUTTONS
+.btn {
+  border-radius: 8;
+}
+
+.btn-cta {
+  background: $project-3;
+  color: white;
+  font-size: 18px;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: 400;
+  transition: all 0.2s ease 0s, opacity 500ms, transform 500ms;
+  &:hover, &:active, &:visited, &:focus {
+    color: white;
+    background: $project-3;
+  }
+  &:hover {
+    box-shadow: 0 16px 32px -6px rgba(0, 0, 0, .2);
+    background: #3599ea;
+  }
+  &:active, &:focus {
+    outline: none !important;
+  }
+}
+
+// SIZES
+
+.size-sm { font-size: $size-sm }
+.size-md { font-size: $size-md }
+.size-lg { font-size: $size-lg }
+.size-title { font-size: $size-title }
+
+.fw-300 { font-weight: 300 }
+.fw-400 { font-weight: 400 }
+.fw-700 { font-weight: 700 }
+
+

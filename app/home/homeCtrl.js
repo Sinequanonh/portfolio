@@ -1,3 +1,4 @@
-app.controller('homeCtrl', ($scope) => {
-  console.log('Salut')
+app.controller('homeCtrl', ($scope, $document) => {
+  $scope.getStarted = () =>
+    console.log('Salut')
 })
