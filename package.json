@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Boiler Plate",
+  "description": "My portfolio",
   "main": "main.js",
   "scripts": {
     "babel": "babel -w app/ -d build/ -s",
