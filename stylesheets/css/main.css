@@ -148,7 +148,7 @@ a:hover, a:active, a:focus, a:visited {
     height: 550px; }
   .wrapper--projects {
     width: 100%;
-    overflow-y: hidden; } }
+    overflow-y: auto; } }
 
 @media (max-width: 418px) {
   .wrapper--infos {
