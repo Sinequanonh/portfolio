@@ -141,3 +141,17 @@ a:hover, a:active, a:focus, a:visited {
 
 .fw-700 {
   font-weight: 700; }
+
+@media (max-width: 769px) {
+  .wrapper--infos {
+    width: 100%;
+    height: 550px; }
+  .wrapper--projects {
+    width: 100%;
+    overflow-y: hidden; } }
+
+@media (max-width: 418px) {
+  .wrapper--infos {
+    height: 650px; }
+  .wrapper--project {
+    height: 260px !important; } }

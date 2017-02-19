@@ -9,7 +9,7 @@ gulp.task('serve', ['sass'], function() {
 
     browserSync.init({
         server: '.',
-        port: 3005
+        port: 3006
     });
 
     gulp.watch("./stylesheets/scss/*.scss", ['sass']);
