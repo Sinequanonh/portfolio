@@ -227,6 +227,12 @@ a:hover, a:active, a:focus, a:visited {
     overflow-y: auto;
   }
 
+  .wrapper--footer {
+    position: relative;
+    margin-top: -45px;
+    margin-left: -40px;
+  }
+
 }
 
 @media (max-width: 418px) {
