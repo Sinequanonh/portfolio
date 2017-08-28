@@ -36,13 +36,17 @@ $size-title: 48px;
 html, body {
   color: $black;
   background-color: $white;
-  font-family: Lato;
+  font-family: 'Open Sans';
   margin: 0;
   overflow-x: hidden;
 }
 
 body {
   overflow: hidden;
+}
+
+.title {
+  font-family: 'Poppins';
 }
 
 .divider {
